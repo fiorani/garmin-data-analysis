@@ -1,4 +1,4 @@
-Id,ActivityDay,SedentaryMinutes,LightlyActiveMinutes,FairlyActiveMinutes,VeryActiveMinutes,SedentaryActiveDistance,LightActiveDistance,ModeratelyActiveDistance,VeryActiveDistance
+Id,Day,SedentaryMinutes,LightlyActiveMinutes,FairlyActiveMinutes,VeryActiveMinutes,SedentaryActiveDistance,LightActiveDistance,ModeratelyActiveDistance,VeryActiveDistance
 1503960366,4/12/2016,728,328,13,25,0,6.05999994277954,0.550000011920929,1.87999999523163
 1503960366,4/13/2016,776,217,19,21,0,4.71000003814697,0.689999997615814,1.57000005245209
 1503960366,4/14/2016,1218,181,11,30,0,3.91000008583069,0.400000005960464,2.44000005722046

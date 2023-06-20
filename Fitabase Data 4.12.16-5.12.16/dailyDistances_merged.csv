@@ -1,4 +1,4 @@
-Id,ActivityDay,TotalDistance,TrackerDistance,LoggedActivitiesDistance
+Id,Day,TotalDistance,TrackerDistance,LoggedActivitiesDistance
 1503960366,4/12/2016,8.5,8.5,0.0
 1503960366,4/13/2016,6.96999979019165,6.96999979019165,0.0
 1503960366,4/14/2016,6.73999977111816,6.73999977111816,0.0
