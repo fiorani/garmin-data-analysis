@@ -1,5 +1,4 @@
 # MSE e R^2 sono incluse in scikit-learn
-pip install numpy
 import numpy as np
 from sklearn.metrics import mean_squared_error, r2_score
 
