@@ -1,5 +1,4 @@
 from flask import Flask, request, render_template
-import pickle
 
 app = Flask(__name__)
 app.debug = True
@@ -14,7 +13,7 @@ def predict():
         int(request.args["PAY_6"]),
         int(request.args["EDUCATION"])
     ]
-    with app.open_resource("model/model.bin", "rb") as f:
+    with app.open_resource("models/model.bin", "rb") as f:
         model = pickle.load(f)
     response = model.predict([inputs])[0]
     return render_template("predict.html", resp=response)
