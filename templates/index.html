@@ -13,21 +13,20 @@
   <div class="card m-auto">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
-      <form method="GET" action="{{ url_for("predict") }}">
+      <form method="POST" action="">
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input name="LIMIT_BAL" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <input name="distance[m]" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input name="PAY_6" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input name="EDUCATION" class="form-control" id="exampleInputPassword1">
+          <input name="altitude[m]" class="form-control" id="exampleInputPassword1">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
+    </div>
+    <div class="card-footer">
+      <p>Predizione: <b>{{ resp }}</b></p>
     </div>
   </div>
 
