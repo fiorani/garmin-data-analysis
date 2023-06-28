@@ -1,3 +1,5 @@
+import os.path
+import pickle
 from flask import Flask, request, render_template
 
 app = Flask(__name__)
@@ -6,6 +8,7 @@ app.debug = True
 @app.route("/")
 def home():
     return render_template("index.html")
+
 @app.route("/predict")
 def predict():
     inputs = [

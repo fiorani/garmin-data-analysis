@@ -1,19 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+
 <head>
- <title>Predizione default carte</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
-<body>
- <h2>Default carte di credito</h2>
- <form method="GET" action="{{ url_for("predict") }}">
-  <p>Credito da saldare: <input name="LIMIT_BAL"></p>
-  <p>Ritardo ultimo mese (-1=puntuale): <input name="PAY_6"></p>
-  <p>Titolo di studio: <select name="EDUCATION">
-   <option value="1">Laurea magistrale</option>
-   <option value="2">Laurea breve</option>
-   <option value="3">Diploma</option>
-   <option value="4">Altro</option>
-  </select></p>
-  <p><button type="submit">Conferma</button></p>
- </form>
+
+<body class="d-flex flex-column vh-100" data-bs-theme="dark">
+  <div class="card m-auto">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <form method="GET" action="{{ url_for("predict") }}">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input name="LIMIT_BAL" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input name="PAY_6" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input name="EDUCATION" class="form-control" id="exampleInputPassword1">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+
 </body>
+
 </html>
