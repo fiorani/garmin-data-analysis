@@ -1,2 +1,7 @@
 .ipynb_checkpoints
 __pycache__/
+myenv/
+templates/
+models/
+datasets/
+garmin_flask.py
